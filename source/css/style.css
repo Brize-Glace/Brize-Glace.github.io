@@ -247,13 +247,15 @@ footer a {
         display: block;
     }
 }
-.mediaButtonsProjects{
+
+.mediaButtonsProjects {
     align-items: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.mediaButtonsProjects button{
+
+.mediaButtonsProjects button {
     padding: 15px;
     margin: 30px;
     background-color: white;
@@ -263,20 +265,24 @@ footer a {
     transition: all 0.3s ease 0s;
     min-width: 250px;
 }
-.mediaButtonsProjects button:hover{
+
+.mediaButtonsProjects button:hover {
     transition: all 0.3s ease 0s;
     background-color: rgb(155, 215, 209);
     box-shadow: 0px 8px 15px rgba(155, 215, 209, 0.35);
 }
-.mediaButtonsProjects button a{
+
+.mediaButtonsProjects button a {
     color: black;
     text-decoration: none;
 }
+
 @media (max-width: 768px) {
     .mediaButtonsProjects {
         flex-direction: column;
     }
 }
+
 /* .container {
     display: flex;
     justify-content: center;
@@ -313,7 +319,7 @@ img {
         width: 100%;
     }
 } */
-#contact-para h2{
+#contact-para h2 {
     padding-top: 30px;
     text-align: center;
 }
