@@ -5,6 +5,7 @@ const aboutLink = document.querySelector('#aboutButton');
 const projectsLink = document.querySelector('#projectsButton');
 const contactLink = document.querySelector('#contactButton');
 const colorNavBar = document.querySelector('#navbar');
+
 const btnProjectsView = document.querySelector('#btnProjectsView')
 
 // Ajouter un gestionnaire d'événements clic au bouton "hamburger"
