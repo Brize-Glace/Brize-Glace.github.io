@@ -56,3 +56,18 @@ window.addEventListener('scroll', () => {
     colorNavBar.style.backgroundColor = 'transparent';
   }
 })
+const alertBoxText = document.getElementById('alert-box')
+window.onerror = function(message, url, line, column, error) {
+  const newTextError = document.createElement('p');
+  newTextError.textContent = message;
+  alertBoxText.appendChild(newTextError)
+
+  showAlertBox()
+};
+function showAlertBox() {
+  document.getElementById("alert-box").style.display = "block";
+}
+
+function closeAlertBox() {
+  document.getElementById("alert-box").style.display = "none";
+}

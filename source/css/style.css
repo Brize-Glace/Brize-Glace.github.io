@@ -86,11 +86,13 @@ html {
     transition: all 0.2s;
 }
 
-@keyframes slideInLeft {
+@keyframes textHeaderAnimation {
     0% {
         transform: translateY(-2%);
         opacity: 0.2;
+        filter: blur(8px);
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -127,7 +129,7 @@ html {
     color: white;
     padding-top: 35vh;
     line-height: 20px;
-    animation: 1s ease-out 0s 1 slideInLeft;
+    animation: 1.5s ease-out 0s 1 textHeaderAnimation;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
@@ -203,6 +205,7 @@ html {
 #about {
     padding-bottom: 50px;
 }
+
 footer {
     text-align: center;
     padding-top: 30px;
@@ -233,6 +236,7 @@ footer a {
     #navbar a {
         padding: 20px;
     }
+
     .main #about p {
         margin-left: 15px;
         margin-right: 15px;
@@ -255,6 +259,7 @@ footer a {
         display: block;
     }
 }
+
 #contact-para h2 {
     padding-top: 30px;
     text-align: center;
@@ -322,16 +327,19 @@ footer a {
 .card-text p:hover {
     text-decoration: underline;
 }
+
 @media (max-width: 768px) {
     .card-row {
         flex-direction: column;
         margin-left: 0px;
         margin-right: 0px;
     }
-    .card{
+
+    .card {
         width: 100%;
     }
 }
+
 @keyframes slide1 {
 
     0%,
@@ -343,12 +351,14 @@ footer a {
         transform: translate(10px, 0);
     }
 }
+
 #contact-titre {
     padding-top: 30px;
     text-align: center;
     padding-bottom: 2px;
 }
-#titre span{
+
+#titre span {
     position: relative;
     font-size: 10px;
     top: -17px;
@@ -356,4 +366,31 @@ footer a {
     padding: 2px;
     border-radius: 20px;
     color: #274C6D;
+}
+
+.alert-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    display: none;
+    z-index: 9999;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 400px;
+    max-height: 4000px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
 }
