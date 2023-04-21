@@ -86,19 +86,6 @@ html {
     transition: all 0.2s;
 }
 
-@keyframes textHeaderAnimation {
-    0% {
-        transform: translateY(-2%);
-        opacity: 0.2;
-        filter: blur(8px);
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
 /*image du header du site */
 .hero {
     height: 100vh;
@@ -129,7 +116,6 @@ html {
     color: white;
     padding-top: 35vh;
     line-height: 20px;
-    animation: 1.5s ease-out 0s 1 textHeaderAnimation;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }

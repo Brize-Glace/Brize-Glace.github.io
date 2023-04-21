@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Primary Meta Tags -->
     <title>Romain Viktorovitch</title>
     <meta name="title" content="Romain Viktorovitch">
@@ -55,8 +57,8 @@
     <div class="hero">
         <div class="txt-hero">
             <center>
-                <p>Je suis</p>
-                <h1>Romain</h1>
+                <p data-aos="zoom-in-right" data-aos-duration="800">Je suis</p>
+                <h1 data-aos="fade-in-left" data-aos-duration="800" data-aos-delay="800">Romain</h1>
             </center>
         </div>
     </div>
@@ -64,9 +66,9 @@
     <div class="main">
         <div id="about">
             <div id="titre-main">
-                <h1 id="titre">A Propos</h1>
+                <h1 id="titre" data-aos="fade-right" data-aos-duration="800">A Propos</h1>
             </div>
-            <p>Je m'appelle Romain, j'ai 16 ans, j'habite en France depuis 2012. Je suis actuellement en 1ère fillière
+            <p data-aos="fade-left" data-aos-duration="900" data-aos-delay="200">Je m'appelle Romain, j'ai 16 ans, j'habite en France depuis 2012. Je suis actuellement en 1ère fillière
                 Générale avec les spécialités Maths, Physique-Chimie et Numérique Sciences de l'Informatique (NSI). <br>
                 <br> J'ai vécu une bonne partie de mon enfance en Suisse Allemande dans la ville de Winterthur. Je me
                 passionne pour la photographie suite à un stage de 3ème. Je m'essaye au developpement web et au web
@@ -120,11 +122,14 @@
         <button class="close-btn" onclick="closeAlertBox()">Fermer</button>
       </div>
     <footer>
-        &copy; Romain Viktorovitch 2022 - Open Source  GNU AFFERO GENERAL PUBLIC LICENSE<br> <a
+        &copy; Romain Viktorovitch 2022-2023, Open Source  GNU AFFERO GENERAL PUBLIC LICENSE<br> <a
             href="license.html">Conditions Générales D'utilisations</a>
     </footer>
 
     <script src="source\js\app.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
