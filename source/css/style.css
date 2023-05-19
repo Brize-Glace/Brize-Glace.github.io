@@ -277,6 +277,7 @@ footer a {
     width: 100%;
     height: auto;
     border-radius: 5px 5px 0 0;
+    align-items: center;
 }
 
 .card-text {
